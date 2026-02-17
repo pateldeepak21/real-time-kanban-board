@@ -41,77 +41,123 @@ Users can create, update, and move tasks across columns with instant live update
 ---
 
 ## 📂 Project Structure
+
+```
 real-time-kanban-board/
 ├── backend/
-│ ├── server.js
-│ ├── package.json
-│ └── .env
+│   ├── server.js
+│   ├── package.json
+│   └── .env
 │
 ├── frontend/
-│ ├── src/
-│ ├── tests/
-│ └── package.json
+│   ├── src/
+│   ├── tests/
+│   └── package.json
 │
 └── README.md
+```
 
 ---
 
 ## ⚙️ Installation & Setup
 
-1️⃣ Clone the Repository
+### 1️⃣ Clone the Repository
 
+```bash
 git clone https://github.com/pateldeepak21/real-time-kanban-board.git
 cd real-time-kanban-board
+```
 
-2️⃣ Backend Setup
--cd backend
--npm install
--npm start
--Backend runs at: http://localhost:5000
-3️⃣ Frontend Setup
--cd frontend
--npm install
--npm run dev
-Frontend runs at: http://localhost:5173
-🧪 Running Tests
-Run Unit Tests
+---
+
+### 2️⃣ Backend Setup
+
+```bash
+cd backend
+npm install
+npm start
+```
+
+Backend runs at:
+
+```
+http://localhost:5000
+```
+
+---
+
+### 3️⃣ Frontend Setup
+
+Open a new terminal:
+
+```bash
+cd frontend
+npm install
+npm run dev
+```
+
+Frontend runs at:
+
+```
+http://localhost:5173
+```
+
+---
+
+## 🧪 Running Tests
+
+### Run Unit Tests
+
+```bash
 cd frontend
 npm run test
+```
 
-Run Playwright E2E Tests
+### Run Playwright E2E Tests
+
+```bash
 npx playwright test
+```
 
-🔌 Environment Variables
+---
 
-Create a .env file inside the backend folder:
+## 🔌 Environment Variables
 
+Create a `.env` file inside the `backend` folder:
+
+```
 PORT=5000
+```
 
-🌍 Real-Time Functionality
+---
+
+## 🌍 Real-Time Functionality
 
 This application uses WebSockets to:
 
-Broadcast task updates to all connected users
+- Broadcast task updates to all connected users
+- Maintain live board state
+- Sync multiple clients instantly
 
-Maintain live board state
+---
 
-Sync multiple clients instantly
+## 🚀 Future Improvements
 
-🚀 Future Improvements
+- User Authentication
+- Database Integration (MongoDB / PostgreSQL)
+- Persistent Storage
+- Deployment (Render / Vercel)
+- CI/CD Integration
 
-User Authentication
+---
 
-Database Integration (MongoDB / PostgreSQL)
+## 👨‍💻 Author
 
-Persistent Storage
-
-Deployment (Render / Vercel)
-
-CI/CD Integration
-
-👨‍💻 Author
-
-Deepak Patel
+**Deepak Patel**  
 GitHub: https://github.com/pateldeepak21
 
+---
 
+## 📄 License
+
+This project is licensed under the MIT License.
